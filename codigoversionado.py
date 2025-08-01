@@ -9,8 +9,9 @@ print(a + b)
 def sumar(a, b):
     return a + b
 
-print(sumar(2, 3))
-
-a = float(input("Ingresa el primer número: "))
-b = float(input("Ingresa el segundo número: "))
-print("Resultado:", sumar(a, b))
+try:
+    a = float(input("Ingresa el primer número: "))
+    b = float(input("Ingresa el segundo número: "))
+    print("Resultado:", sumar(a, b))
+except ValueError:
+    print("Error: Debes ingresar solo números.")
